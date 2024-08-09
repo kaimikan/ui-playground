@@ -1,0 +1,11 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #212121;
+  color: #dadada;
+}
+
+a {
+  color: #3685c5;
+}
