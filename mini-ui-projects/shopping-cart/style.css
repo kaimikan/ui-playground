@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.content {
+  margin-top: 5rem;
+}
+
+h1,
+h2 {
+  color: #dcdcdc;
+}
+
+#toggle-cart {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+#toggle-cart:hover {
+  background-color: #0069d9;
+}
+
+#toggle-cart:active {
+  background-color: #0056b3;
+  transform: scale(0.95);
+}
+
+.products {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.product {
+  border: 1px solid #ddd;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+}
+
+.product h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.product button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+.product button:hover {
+  background-color: #218838;
+}
+
+.product button:active {
+  background-color: #1e7e34;
+  transform: scale(0.95);
+}
+
+.cart-section {
+  display: none; /* Initially hidden */
+  position: absolute;
+  top: 60px; /* Adjusts the position just below the Toggle Cart button */
+  right: 20px;
+  background-color: rgb(47, 47, 47);
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 560px;
+  z-index: 9;
+}
+
+#cart-items {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+#cart-items th,
+#cart-items td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.cart-total {
+  text-align: right;
+  font-size: 18px;
+}
+
+#checkout {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s, transform 0.1s;
+}
+
+#checkout:hover {
+  background-color: #0069d9;
+}
+
+#checkout:active {
+  background-color: #0056b3;
+  transform: scale(0.95);
+}
