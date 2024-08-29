@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <h3 id="back-to-main-page">
+      <a href="../../index.html">◄ Back to Navigation</a>
+    </h3>
+    <div class="container">
+      <h2>Event Sign Up</h2>
+      <form id="signupForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="event">Event:</label>
+        <select id="event" name="event" required>
+          <option value="">Select an event</option>
+          <option value="cleanup">Beach Cleanup</option>
+          <option value="planting">Tree Planting</option>
+          <option value="soupkitchen">Soup Kitchen</option>
+        </select>
+
+        <label for="comments">Comments (optional):</label>
+        <textarea id="comments" name="comments" rows="4"></textarea>
+
+        <button type="submit">Sign Up</button>
+      </form>
+      <p id="successMessage" class="hidden">Thank you for signing up!</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
