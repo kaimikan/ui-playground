@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workout Monitor</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <h3 id="back-to-main-page">
+      <a href="../../index.html">◄ Back to Navigation</a>
+    </h3>
+
+    <div class="container">
+      <h1>Workout Monitor</h1>
+      <form id="workoutForm">
+        <label for="workoutType">Workout Type:</label>
+        <select id="workoutType" required>
+          <option value="Biking">Biking</option>
+          <option value="Pushups - Rings">Pushups - Rings</option>
+          <option value="Pushups - Bars">Pushups - Bars</option>
+          <option value="Pull Ups">Pull Ups</option>
+          <option value="Chin Ups">Chin Ups</option>
+          <option value="Squats">Squats</option>
+          <option value="Jump Rope">Jump Rope</option>
+        </select>
+
+        <label for="sets">Sets:</label>
+        <input type="number" id="sets" min="1" required />
+
+        <label for="reps">Reps/Time (minutes):</label>
+        <input type="number" id="reps" min="1" required />
+
+        <button type="submit">Add Workout</button>
+      </form>
+
+      <!-- Hidden section that will be shown after a workout is added -->
+      <div id="loggedWorkoutsSection" style="display: none">
+        <h2>Logged Workouts</h2>
+        <ul id="workoutList"></ul>
+
+        <button id="resetWorkouts">Reset Workouts</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
