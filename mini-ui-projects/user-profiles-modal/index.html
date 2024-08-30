@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sample Project</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <h3 id="back-to-main-page">
+      <a href="../../index.html">◄ Back to Navigation</a>
+    </h3>
+
+    <!-- Button to open modal -->
+    <button class="open-modal-btn">Select Profile</button>
+
+    <!-- Modal Structure -->
+    <div class="modal" id="profileModal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>Select Your Profile</h3>
+          <button class="close-btn" id="closeModal">&times;</button>
+        </div>
+        <div class="profiles">
+          <!-- Example profiles; these can be dynamically generated -->
+          <div class="profile" data-username="User1">
+            <img
+              src="https://placehold.co/60x60/orange/white?text=U1"
+              alt="User 1"
+            />
+            <span>User 1</span>
+          </div>
+          <div class="profile" data-username="User2">
+            <img
+              src="https://placehold.co/60x60/blue/white?text=U2"
+              alt="User 2"
+            />
+            <span>User 2</span>
+          </div>
+          <div class="profile" data-username="User3">
+            <img
+              src="https://placehold.co/60x60/green/white?text=U3"
+              alt="User 3"
+            />
+            <span>User 3</span>
+          </div>
+          <div class="profile" data-username="User4">
+            <img
+              src="https://placehold.co/60x60/purple/white?text=U4"
+              alt="User 4"
+            />
+            <span>User 4</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
