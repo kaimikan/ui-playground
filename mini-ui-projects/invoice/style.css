@@ -1,0 +1,94 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+}
+
+.invoice-container {
+  max-width: 800px;
+  min-width: 600px;
+  margin: auto;
+  background: #e7e7e7;
+  color: #212121;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.invoice-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.invoice-header h2 {
+  margin: 0;
+}
+
+.invoice-details {
+  margin-bottom: 20px;
+}
+
+.invoice-details p {
+  margin: 5px 0;
+}
+
+.invoice-items {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.invoice-items th,
+.invoice-items td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.invoice-items th {
+  background: #c3c3c3;
+}
+
+.invoice-items td {
+  background: #dbdbdb;
+}
+
+.total {
+  text-align: right;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.pay-button {
+  display: inline-block;
+  padding: 10px 20px;
+  color: #fff;
+  background-color: #28a745;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.pay-button:hover {
+  background-color: #218838;
+}
+
+.thank-you {
+  display: none;
+  margin-top: 20px;
+  color: #28a745;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.thank-you img {
+  margin-top: 10px;
+}
