@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Statistics</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <!-- Include Chart.js Library -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <h3 id="back-to-main-page">
+      <a href="../../index.html">◄ Back to Navigation</a>
+    </h3>
+
+    <header>
+      <h1>Top Statistics</h1>
+      <p>
+        Statistics from various fields such as finance, engineering, sports, and
+        video games.
+      </p>
+    </header>
+    <section id="stats-container">
+      <!-- Statistic Cards will be generated here -->
+    </section>
+
+    <!-- Container for the Pie and Line Charts -->
+    <section id="charts-container">
+      <canvas id="pieChart"></canvas>
+      <canvas id="lineChart"></canvas>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

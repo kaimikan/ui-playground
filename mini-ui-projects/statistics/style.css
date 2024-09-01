@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body Styling */
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  color: #cecece;
+}
+
+header p {
+  color: rgb(131, 131, 131) ece;
+}
+
+/* Statistics Cards Container */
+#stats-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+/* Individual Stat Card */
+.stat-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 200px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.stat-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Icon and Stat Value Styling */
+.stat-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #4caf50;
+}
+
+.stat-value {
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+}
+
+.stat-name {
+  color: #777;
+}
+
+/* Chart Container Styling */
+#charts-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+/* Canvas Styling for Charts */
+#pieChart,
+#lineChart {
+  max-width: 400px;
+  max-height: 400px;
+}
