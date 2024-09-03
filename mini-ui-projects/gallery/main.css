@@ -1,0 +1,25 @@
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+/* BODY CONTENT */
+.content {
+  margin-top: calc(15vh + 1rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: calc(5vh + 0.5rem);
+}
+.secret-content {
+  margin-top: calc(15vh + 1rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: calc(5vh + 0.5rem);
+}

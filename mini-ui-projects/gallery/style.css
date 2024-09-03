@@ -1,0 +1,28 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+  background-color: #212121;
+  color: #dadada;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.content {
+  margin-top: calc(10vh + 1rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: calc(5vh + 0.5rem);
+}
+.secret-content {
+  margin-top: calc(10vh + 1rem);
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: calc(5vh + 0.5rem);
+}

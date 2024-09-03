@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collection View</title>
+    <link rel="stylesheet" type="text/css" href="small-view-style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h3 id="back-to-main-page">
+      <a href="../../index.html">◄ Back to Navigation</a>
+    </h3>
+
+    <div class="secret-content">
+      <div class="small-view">
+        <div
+          class="square-container"
+          item-id="1"
+          subitem-amount="2"
+          name="Name 1"
+          date="Hmm Date 1"
+        >
+          <div class="image-container">
+            <img src="items/item_1/img.png" alt="alt-img-name-1" />
+            <div class="text-overlay">
+              <h2 class="name">Name 1</h2>
+              <p class="refence"><b>Date: </b> Hmm Date 1</p>
+              <h3 class="cost">no cost</h3>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="square-container"
+          item-id="2"
+          subitem-amount="4"
+          name="Name 2"
+          date="Hmm Date 2"
+        >
+          <div class="image-container">
+            <img src="items/item_2/img.png" alt="alt-img-name-2" />
+            <div class="text-overlay">
+              <h2 class="name">Image 2</h2>
+              <p class="refence"><b>Date: </b> Image 2 Date</p>
+              <h3 class="cost">no cost</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        // Find the clickable div
+        const clickableDivs =
+          document.getElementsByClassName('square-container');
+
+        // Add click event listener to the div
+        for (let i = 0; i < clickableDivs.length; i++) {
+          clickableDivs[i].addEventListener('click', function () {
+            const itemId = clickableDivs[i].getAttribute('item-id');
+            const subitemAmount =
+              clickableDivs[i].getAttribute('subitem-amount');
+            console.log(itemId);
+            const name = clickableDivs[i].getAttribute('name');
+            const date = clickableDivs[i].getAttribute('date');
+            // Create a form element
+            const form = document.createElement('form');
+            form.setAttribute('method', 'post');
+            form.setAttribute(
+              'action',
+              `big-single-view.html?item-number=${itemId}&total-subitems=${subitemAmount}&item-name=${name}&item-date=${date}`
+            );
+
+            // Append form to body (or any other parent element)
+            document.body.appendChild(form);
+
+            // Submit the form
+            form.submit();
+          });
+        }
+      });
+    </script>
+  </body>
+</html>
