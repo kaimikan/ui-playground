@@ -1,0 +1,37 @@
+.trending-container {
+  margin-top: 5rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+h2 {
+  margin: 0 0 10px;
+  color: #333;
+}
+
+.trending-banner {
+  display: flex;
+  gap: 20px;
+  /* overflow: hidden; */
+  white-space: nowrap;
+  position: relative;
+}
+
+.trending-item {
+  display: inline-block;
+  background-color: #e7f0ff;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  color: #0056b3;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.trending-item:hover {
+  background-color: #cfe0ff;
+}
