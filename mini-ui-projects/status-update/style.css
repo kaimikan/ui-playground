@@ -1,0 +1,34 @@
+/* Notification Bar */
+.notification-bar {
+  width: 100%;
+  padding: 15px;
+  color: white;
+  text-align: center;
+  position: fixed;
+  top: 0;
+}
+
+/* Progress Container */
+.progress-container {
+  width: 80%;
+  background-color: #ddd;
+  border-radius: 25px;
+  margin: 100px auto;
+  height: 30px;
+  overflow: hidden;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #081; /* Dark green */
+  transition: width 0.4s ease;
+  border-radius: 25px;
+}
+
+/* Completed State */
+.completed {
+  background-color: #28a745; /* Green color for completion */
+}
