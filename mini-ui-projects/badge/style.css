@@ -1,0 +1,46 @@
+h1 {
+  margin-top: 5rem;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 30px;
+  font-size: 1.2em;
+  transition: transform 0.3s ease-in-out;
+}
+
+.badge:hover {
+  transform: scale(1.1);
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  padding: 10px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.input-section button {
+  padding: 10px 20px;
+  font-size: 1em;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-section button:hover {
+  background-color: #45a049;
+}
+
+.badges-container {
+  margin-top: 30px;
+}
