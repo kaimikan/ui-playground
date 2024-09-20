@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Reading Progress</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <h3 id="back-to-main-page">
+      <a href="../../index.html">◄ Back to Navigation</a>
+    </h3>
+
+    <div class="container">
+      <h1>Track Your Reading Progress</h1>
+
+      <label for="totalPages">Total Pages in Book:</label>
+      <input
+        type="number"
+        id="totalPages"
+        placeholder="Enter total pages"
+        required
+      />
+
+      <label for="currentPage">Current Page:</label>
+      <input
+        type="number"
+        id="currentPage"
+        placeholder="Enter current page number"
+        required
+      />
+
+      <button onclick="calculateProgress()">Calculate Progress</button>
+
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+
+      <p id="progressText"></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
