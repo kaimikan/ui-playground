@@ -1,0 +1,101 @@
+/* Base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #1c232c, #8d95ab);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+  position: relative;
+  z-index: 10; /* Ensures content is on top of animations */
+}
+
+h1 {
+  font-size: 8rem;
+  font-weight: bold;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-top: 20px;
+}
+
+.home-button {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  color: white;
+  background: #3a5ca0;
+  z-index: 99999;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: background 0.3s ease-in-out;
+}
+
+.home-button:hover {
+  background: #233760;
+}
+
+/* Planet and Astronaut Animation */
+.animation {
+  position: absolute;
+  bottom: 0;
+  right: 0%;
+  width: 300px;
+  height: 300px;
+  z-index: -1;
+}
+
+.dot {
+  width: 25px;
+  height: 25px;
+  background: linear-gradient(135deg, #ffffff, #747474);
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  top: 85px;
+  right: 100px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  animation: rotate 10s linear infinite;
+}
+
+.floater img {
+  width: 100px;
+  position: absolute;
+  top: -30px;
+  right: 100px;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Keyframes */
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
