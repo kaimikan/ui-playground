@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create New</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <h3 id="back-to-main-page">
+      <a href="../../index.html">◄ Back to Navigation</a>
+    </h3>
+
+    <div class="container">
+      <h1>Create New Item</h1>
+      <p>Select the type of item you'd like to create:</p>
+
+      <div class="options">
+        <button class="option-btn" onclick="createNew('Document')">
+          New Document
+        </button>
+        <button class="option-btn" onclick="createNew('Design File')">
+          New Design File
+        </button>
+        <button class="option-btn" onclick="createNew('Spreadsheet Column')">
+          New Spreadsheet Column
+        </button>
+      </div>
+
+      <div id="form-container" class="form-container"></div>
+
+      <div id="message" class="message"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
