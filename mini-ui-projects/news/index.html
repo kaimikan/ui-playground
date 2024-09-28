@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>News</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <h3 id="back-to-main-page">
+      <a href="../../index.html">◄ Back to Navigation</a>
+    </h3>
+
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1 class="logo"></h1>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">World</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Tech</a></li>
+            <li><a href="#">Sports</a></li>
+          </ul>
+        </nav>
+        <div class="search-bar">
+          <input type="text" placeholder="Search news..." id="searchInput" />
+          <button onclick="searchNews()">Search</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Layout: News + Sidebar -->
+    <div class="content-layout">
+      <!-- Main Content -->
+      <main class="news-grid" id="newsGrid">
+        <!-- Articles will be dynamically inserted here -->
+      </main>
+
+      <!-- Trending Sidebar (on the right) -->
+      <aside class="sidebar">
+        <h2>Trending</h2>
+        <ul>
+          <li><a href="#">Article 1</a></li>
+          <li><a href="#">Article 2</a></li>
+          <li><a href="#">Article 3</a></li>
+        </ul>
+      </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Daily News. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
