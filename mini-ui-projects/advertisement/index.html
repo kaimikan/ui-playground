@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advertisement</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="../../style.css" />
+  </head>
+  <body>
+    <h3 id="back-to-main-page">
+      <a href="../../index.html">◄ Back to Navigation</a>
+    </h3>
+
+    <div class="ad-container">
+      <div class="ad-header">
+        <h1>Our Latest Product</h1>
+        <p>Not everyone likes ads, but our product is worth it!</p>
+      </div>
+      <div class="ad-content">
+        <div class="ad-message">
+          <h2>Why You'll Love It</h2>
+          <p>
+            This product is designed to inspire, with a touch of humor that will
+            make your day.
+          </p>
+          <button onclick="showMessage()">Learn More</button>
+        </div>
+        <div class="ad-image">
+          <img src="https://via.placeholder.com/300" alt="Product Image" />
+        </div>
+      </div>
+    </div>
+
+    <div id="popup-message" class="hidden">
+      <p>
+        This ad is for people who appreciate clever and funny products. Don't
+        miss out!
+      </p>
+      <button onclick="closeMessage()">Close</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
