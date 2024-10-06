@@ -55,10 +55,14 @@ body {
   font-weight: 600;
 }
 #spinner-arrow {
+  filter: brightness(50%);
   position: absolute;
-  width: 4em;
-  top: 35%;
-  right: -8%;
+  top: -5%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px; /* Adjust size as needed */
+  height: 40px;
+  z-index: 10; /* Ensures the arrow stays above the wheel */
 }
 #final-value {
   font-size: 1.5em;
@@ -70,8 +74,5 @@ body {
 @media screen and (max-width: 768px) {
   .wrapper {
     font-size: 12px;
-  }
-  #spinner-arrow {
-    right: -5%;
   }
 }

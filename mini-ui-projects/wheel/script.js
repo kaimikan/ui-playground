@@ -54,41 +54,25 @@ let myChart = new Chart(wheel, {
 
 // Display value based on the random angle
 const valueGenerator = () => {
-  angleValue = 180;
+  let aimDegrees = 360;
   let minDegree = 0;
   let maxDegree = 0;
-  let hasRotatedAround = false;
-  console.log('entered the method');
+  let degreeScope = 120;
   for (let i of rotationValues) {
     // If the angleValue is between min and max then display it
-    console.log('Chart Rotation: ', myChart.options.rotation);
-    console.log('Angle Rotation: ', angleValue);
-
     minDegree = (i.minDegree + myChart.options.rotation) % 360;
-    console.log('Min: ', minDegree);
 
     maxDegree = (i.maxDegree + myChart.options.rotation) % 360;
-    console.log('Max: ', maxDegree);
 
-    let swapper = 0;
-    if (minDegree > maxDegree) {
-      hasRotatedAround = true;
-    }
-
-    console.log(i);
-
-    if (hasRotatedAround) {
-      if (angleValue >= minDegree && angleValue <= maxDegree + minDegree) {
-        finalValue.innerHTML = `<p>Selected: ${i.value}</p>`;
-        spinBtn.disabled = false;
-        break;
-      }
-    } else {
-      if (angleValue >= minDegree && angleValue <= maxDegree) {
-        finalValue.innerHTML = `<p>Selected: ${i.value}</p>`;
-        spinBtn.disabled = false;
-        break;
-      }
+    if (aimDegrees >= minDegree && aimDegrees <= degreeScope + minDegree) {
+      console.log('Chart Rotation: ', myChart.options.rotation);
+      console.log('Angle Rotation: ', aimDegrees);
+      console.log('Min: ', minDegree);
+      console.log('Max: ', maxDegree);
+      console.log(i);
+      finalValue.innerHTML = `<p>Selected: <b>${i.value}</b></p>`;
+      spinBtn.disabled = false;
+      break;
     }
   }
 };
@@ -98,11 +82,13 @@ let count = 0;
 // 100 rotations for animation and last rotation for result
 let resultValue = 101;
 
+finalValue.innerHTML = `<p>Ready to Spin!</p>`;
+
 // Start spinning
 spinBtn.addEventListener('click', () => {
   spinBtn.disabled = true;
+  finalValue.innerHTML = `<p>Spinning...</p>`;
   // Empty final value
-  finalValue.innerHTML = `<p>Ready to Spin!</p>`;
   // Generate random degrees to stop at
   let randomDegree = Math.floor(Math.random() * (355 - 0 + 1) + 0);
   // Interval for rotation animation
