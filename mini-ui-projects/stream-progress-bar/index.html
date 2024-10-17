@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Progress Bar</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Hourly Bars</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" type="text/css" href="../../style.css" />
   </head>
   <body>
@@ -12,10 +12,40 @@
       <a href="../../index.html">◄ Back to Navigation</a>
     </h3>
 
-    <div>
-      <h3>5 Hour Progress Bar:</h3>
-      <div class="progress-container">
-        <!-- Squares will be dynamically added here by JavaScript -->
+    <div class="form-container">
+      <form id="timer-form">
+        <div class="title" id="toggle-timer-form">New Timer</div>
+        <div id="toggle-form-content" visible="false">
+          <label for="title">Title:</label>
+          <input type="text" id="timer-title" name="text" required />
+
+          <label for="duration-hours">Hours:</label>
+          <input
+            type="number"
+            id="duration-hours"
+            name="duration-hours"
+            min="0"
+            value="0"
+            required
+          />
+
+          <button type="submit">Add Timer</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="timers-container" id="timers-container">
+      <div class="timer-container" id="timer1">
+        <div class="title">Coding</div>
+        <div class="progress-container">
+          <!-- Squares will be dynamically added here by JavaScript -->
+        </div>
+        <div class="time-display">00:00:00</div>
+        <div class="controls">
+          <button class="start-btn">Start</button>
+          <button class="pause-btn">Pause</button>
+          <button class="reset-btn">Reset</button>
+        </div>
       </div>
     </div>
 
